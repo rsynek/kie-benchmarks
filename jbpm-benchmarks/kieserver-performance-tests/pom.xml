@@ -43,7 +43,7 @@
     <reporterType>Console</reporterType>
     <periodicity>5</periodicity>
     <reportDataLocation>reportData</reportDataLocation>
-    
+
     <!-- PerfRepo configuration -->
     <perfRepo.host>localhost</perfRepo.host>
     <perfRepo.urlPath></perfRepo.urlPath>
@@ -68,7 +68,7 @@
     <kieserver.name>kie-server</kieserver.name>
 
     <property environment="env" />
-    
+
     <jboss.home>${env.JBOSS_HOME}</jboss.home>
   </properties>
 
@@ -124,7 +124,7 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>org.kie.server</groupId>
       <artifactId>kie-server-api</artifactId>
@@ -132,11 +132,6 @@
     <dependency>
       <groupId>org.kie.server</groupId>
       <artifactId>kie-server-client</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.wildfly</groupId>
-      <artifactId>wildfly-jms-client-bom</artifactId>
-      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.assertj</groupId>
@@ -177,7 +172,7 @@
             <argument>-Dperiodicity=${periodicity}</argument>
             <argument>-DreportDataLocation=${reportDataLocation}</argument>
             <argument>-Dmeasure=${measure}</argument>
-            
+
             <argument>-DperfRepo.host=${perfRepo.host}</argument>
             <argument>-DperfRepo.urlPath=${perfRepo.urlPath}</argument>
             <argument>-DperfRepo.username=${perfRepo.username}</argument>
